@@ -5,7 +5,8 @@ object Global extends GlobalSettings {
 
   override def onStart(app: Application) {
     Logger.info("Application has started.........!!!!!!")
-    FetchLatitudeAndLongitudeUtil.fetchLatitudeAndLongitude("New Delhi")
+    val valuesFetchedForLatitudeAndLongitude = FetchLatitudeAndLongitudeUtil.fetchLatitudeAndLongitude("New Delhi")
+    println(valuesFetchedForLatitudeAndLongitude)
   }
 
 }
